@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cheffe de Projet Digital</title>
+    <style>
+        /* Global Styles */
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        
+        body {
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 1.5em 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            padding: 0;
+        }
+
+        nav ul li a {
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00cccc;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #00cccc;
+            color: white;
+            padding: 3em 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero-text p {
+            max-width: 600px;
+            margin-bottom: 1.5em;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 0.8em 2em;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #004d99;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 4em 1em;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #0066cc;
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+
+        .project-card {
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #00cccc;
+            margin: 0.5em 0;
+        }
+
+        .project-card p {
+            padding: 0 1em;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .project-card .cta-button {
+            margin: 1em 0;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            padding: 1.5em 0;
+            background-color: #0066cc;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                text-align: left;
+                padding: 4em 2em;
+            }
+
+            .hero .hero-text, .hero .hero-image {
+                flex: 1;
+                padding: 0 1em;
+            }
+
+            nav ul {
+                gap: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#projets">Mes projets</a></li>
+                <li><a href="#gestion">Gestion de projet</a></li>
+                <li><a href="#uxdesign">UX Design</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Cheffe de Projet Digital<br>Product Designer</h2>
+                <p>Découvrez mes projets et mon parcours dans le domaine de la gestion de projets digitaux et du design de produits.</p>
+                <a href="#contact" class="cta-button">Contactez-moi !</a>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for profile image -->
+                <div style="width: 200px; height: 200px; background-color: #ddd; border-radius: 50%;"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projets" class="section">
+            <h2>Mes Projets</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Projet 1</h3>
+                    <p>Découvrez comment j'ai contribué à ce projet innovant...</p>
+                    <a href="#projets.html" class="cta-button">Voir plus</a>
+                </div>
+                <!-- More project cards... -->
+            </div>
+        </section>
+
+        <!-- Project Management Section -->
+        <section id="gestion" class="section">
+            <h2>Gestion de Projet</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Gestion de Projet 1</h3>
+                    <p>Des expériences enrichissantes dans la gestion de projet...</p>
+                    <a href="gestiondeprojet.html" class="cta-button">Voir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX Design Section -->
+        <section id="uxdesign" class="section">
+            <h2>UX Design</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>UX Design</h3>
+                    <p>Une approche centrée sur l'utilisateur...</p>
+                    <a href="uxdesign.html" class="cta-button">Voir plus</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Cheffe de Projet Digital - Tous droits réservés</p>
+        <a href="#contact" class="cta-button">Contactez-moi !</a>
+    </footer>
+</body>
+</html>
